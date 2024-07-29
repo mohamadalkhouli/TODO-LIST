@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <div class="cont">
+    <h1>TODO LIST</h1>
+    <div class="action">
+
+      <div class="search">
+        <input id="search1" type="text" placeholder="Search note..">
+      </div>
+
+
+
+      <div class="dropdown">
+        <button class="dropbtn">All <img src="/image/chevron-top.png" alt=""></button>
+        <div class="dropdown-content">
+          <a href="#" id="filter-all">All</a>
+          <a href="#" id="filter-complete">Complete</a>
+          <a href="#" id="filter-incomplete">Incomplete</a>
+        </div>
+      </div>
+
+      <div class="mood">
+        <button>
+          <img src="/image/moon4.png" id="icon">
+
+        </button>
+      </div>
+
+
+
+
+    </div>
+
+    <div class="empty">
+      <img src="/image/photo.png" id="emptyImage">
+      <p>Empty...</p>
+    </div>
+
+    <div class="todo-list">
+      <ul id="list-container">
+        <!-- <li class="checked">Tsk 1</li>
+      <li>Tsk 2</li>
+      <li>Tsk 3</li> -->
+      </ul>
+    </div>
+
+    <div class="add">
+      <button id="open-popup">
+        <img src="/image/plus.png" alt="">
+      </button>
+    </div>
+
+
+    <div class="popup" id="popup">
+      <div class="overlay">
+        <div class="popup-content">
+          <h2>NEW NOTE</h2>
+          <input id="input-box" placeholder="input your note...">
+          <div class="conrols">
+
+            <button class="close-btn">Cancel</button>
+            <button onclick="addTask()" class="Apply-btn">Apply</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <script src="/index.js"></script>
+</body>
+
+</html>
